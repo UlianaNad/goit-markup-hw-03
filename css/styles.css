@@ -151,6 +151,7 @@ header a{
 .flex-header{
     display: flex;
     align-items: center;
+    border-bottom: 1px solid var(--cornflower);
 }
 .flex-header nav, .flex-header .address .list, .site-nav{
     display: flex;
@@ -181,8 +182,6 @@ header a{
 .person-padding .name{
     margin-bottom: 8px;
 }
-
-/* studio styles */
 .crew .name{
     color: var(--navy-blue);
     font-size: 20px;
@@ -208,11 +207,16 @@ header a{
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
-.solutions{
-    background: var(--navy-blue);
+/* studio styles */
+.flex-button{
+    display: flex;
+    margin-top: 96px;
+    margin-bottom: 72px;
+    justify-content: center;
+    gap: 24px;
 }
+
 .section-title-block{
-    
     color: var(--white);
     font-size: 56px;
     font-weight: 700;
