@@ -134,10 +134,13 @@ header a{
     padding-top: 24px;
     padding-bottom: 24px;
 }
+.header{
+    border-bottom: 1px solid var(--cornflower);
+}
 .flex-header{
     display: flex;
     align-items: center;
-    border-bottom: 1px solid var(--cornflower);
+    padding: 0 15px;
 }
 .flex-header nav, .flex-header .address .list, .site-nav{
     display: flex;
@@ -223,7 +226,7 @@ header a{
     overflow: hidden;
     }
 .container{
-    width: 1128px;
+    width: 1158px;
     margin: 0 auto;
 }
 .strategy-block .description{
@@ -286,10 +289,10 @@ header a{
 /* footer */
 .footer{
     background-color: var(--navy-blue);
+    padding: 100px 0;
 }
 .footer .slogan{
     width: 264px;
-    margin-top: 16px;
     color: var(--cloud);
     font-size: 16px;
     line-height: 1.5;
@@ -298,7 +301,7 @@ header a{
 .footer .footer-text{
     color: var(--cloud);
 }
-.foot{
-    padding-top: 100px;
-    padding-bottom: 100px;
+.logo.link{
+    display: inline-block;
+    margin-bottom: 16px;
 }
