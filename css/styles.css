@@ -121,6 +121,12 @@ img{
     border: 1px solid transparent;
     
 }
+.container.center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .team-block{
     background-color: var(--cloud);
     padding: 120px 0;
