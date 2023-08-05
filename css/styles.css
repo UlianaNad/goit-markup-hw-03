@@ -221,7 +221,7 @@ header a{
     line-height: 1.07;
     text-align: center;
 }
-.section-title-block .button{
+.hero .button{
     display: block;
     min-width: 169px;
     height: 56px;
@@ -273,7 +273,7 @@ header a{
     gap: 24px;
     align-items: center;
 }
-.section-title.mbh2{
+.section-title.mbh{
     margin-bottom: 72px;
 }
 .flex-list .item{
@@ -336,6 +336,6 @@ header a{
 .logo.link{
     display: inline-block;
 }
-.logo.link.mb{
+.logo.link.mbfoot{
     margin-bottom: 16px;
 }
