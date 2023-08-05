@@ -35,7 +35,7 @@ img{
 .link{
     text-decoration: none;
 }
-nav .header-text{
+.nav .header-text{
     color: var(--navy-blue);
 }
 .studio-color{
@@ -118,10 +118,12 @@ nav .header-text{
 .button:focus{
     color: var(--white);
     background-color: var(--ocean);
+    border: 1px solid transparent;
     
 }
 .team-block{
     background-color: var(--cloud);
+    padding: 120px 0;
 }
 .crew {
     padding: 72px 0px;
@@ -142,7 +144,7 @@ header a{
     align-items: center;
     padding: 0 15px;
 }
-.flex-header nav, .flex-header .address .list, .site-nav{
+.flex-header .nav, .flex-header .address .list, .site-nav{
     display: flex;
     align-items: center;
 }
@@ -156,17 +158,17 @@ header a{
     margin-right: 0px;
 }
 .hero{
-    padding-top: 188px;
-    padding-bottom: 188px;
+    padding-top: 120px;
+    padding-bottom: 120px;
     text-align: center;
-}
-.background-hero{
     background-color: var(--navy-blue);
 }
-
+.crew .person{
+    width: calc((100% - 3 * 24px) / 4);
+}
 .person-padding{
     text-align: center;
-    padding: 32px 16px;
+    padding: 32px 0;
 }
 .person-padding .name{
     margin-bottom: 8px;
@@ -199,10 +201,13 @@ header a{
 /* studio styles */
 .flex-button{
     display: flex;
-    margin-top: 96px;
     margin-bottom: 72px;
     justify-content: center;
     gap: 24px;
+    row-gap: 48px;
+}
+.flex-button:nth-last-child(-n+3){
+    margin-bottom: 0;
 }
 
 .section-title-block{
@@ -229,8 +234,10 @@ header a{
     width: 1158px;
     margin: 0 auto;
 }
-.strategy-block .description{
-    margin-top: 8px;
+
+.container.pad{
+    padding-top: 96px;
+    padding-bottom: 120px;
 }
 .strategy-block{
     padding-top: 120px;
@@ -240,34 +247,40 @@ header a{
     flex-wrap: wrap;
 }
 .strategy-block .item{
-    max-width: 264px;
+    width: calc((100% - 3 * 24px) / 4);
     margin-right: 24px;
+}
+.strategy-block{
+    margin-bottom: 8px;
 }
 .strategy-block .item:last-child{
     margin-right: 0;
 }
+
 .flex-list, .crew{
     display: flex;
     gap: 24px;
     align-items: center;
 }
-.flex-list{
-    margin-top: 72px;
+.section-title.mb{
+    margin-bottom: 72px;
 }
-.section.list.margin{
-    margin: 0px 0px 120px;
+.flex-list .item{
+    width: calc((100% - 3 * 16px) / 3);
+}
+
+.section.list.padding{
+    padding: 0px 0px 120px;
 }
 .portfolio-flex{
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
 }
-.portfolio-block{
-    margin-bottom: 24px;
-}
+
 .portfolio-block .wrapper{
-    margin: 32px 0;
-    padding-left: 16px;
+    padding: 32px 16px;
+    border: 1px solid var(--cornflower);
 }
 .portfolio-title{
     color: var(--navy-blue);
