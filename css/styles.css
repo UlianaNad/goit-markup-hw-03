@@ -203,10 +203,15 @@ header a{
     display: flex;
     margin-bottom: 72px;
     justify-content: center;
-    gap: 24px;
+    /* gap: 24px; */
     row-gap: 48px;
 }
-
+.flex-button li{
+    margin-right: 24px;
+}
+.flex-button li:last-child{
+    margin-right: 0;
+}
 .section-title-block{
     max-width: 496px;
     color: var(--white);
@@ -268,7 +273,7 @@ header a{
     gap: 24px;
     align-items: center;
 }
-.section-title.mb{
+.section-title.mbh2{
     margin-bottom: 72px;
 }
 .flex-list .item{
@@ -282,11 +287,15 @@ header a{
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
+    row-gap: 48px;
 }
-
+.portfolio-block{
+    width: calc((100% - 48px) / 3);
+}
 .portfolio-block .wrapper{
     padding: 32px 16px;
     border: 1px solid var(--cornflower);
+    border-top: none;
 }
 .portfolio-title{
     color: var(--navy-blue);
@@ -326,4 +335,7 @@ header a{
 }
 .logo.link{
     display: inline-block;
+}
+.logo.link.mb{
+    margin-bottom: 16px;
 }
