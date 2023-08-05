@@ -158,8 +158,8 @@ header a{
     margin-right: 0px;
 }
 .hero{
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 188px;
+    padding-bottom: 188px;
     text-align: center;
     background-color: var(--navy-blue);
 }
@@ -206,11 +206,9 @@ header a{
     gap: 24px;
     row-gap: 48px;
 }
-/* .flex-button:nth-last-child(-n+3){
-    margin-bottom: 0;
-} */
 
 .section-title-block{
+    max-width: 496px;
     color: var(--white);
     font-size: 56px;
     font-weight: 700;
@@ -218,6 +216,13 @@ header a{
     line-height: 1.07;
     text-align: center;
 }
+.section-title-block .button{
+    display: block;
+    min-width: 169px;
+    height: 56px;
+    border: none;
+}
+
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -235,13 +240,11 @@ header a{
     margin: 0 auto;
 }
 
-.container.pad{
-    padding-top: 96px;
-    padding-bottom: 120px;
+.section-strategy{
+    padding: 120px 0;
 }
+
 .strategy-block{
-    padding-top: 120px;
-    padding-bottom: 120px;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -251,6 +254,9 @@ header a{
     margin-right: 24px;
 }
 .strategy-block{
+    margin-bottom: 8px;
+}
+.strategy-block .title{
     margin-bottom: 8px;
 }
 .strategy-block .item:last-child{
@@ -298,6 +304,10 @@ header a{
 }
 .button.portfolio{
     width:fit-content;
+}
+.list.main{
+    padding-top: 96px;
+    padding-bottom: 120px;
 }
 /* footer */
 .footer{
